@@ -8,5 +8,7 @@ O AluraMed é um projeto de página responsiva desenvolvido para clínicas médi
 - HTML
 - CSS
 
+<hr>
+
 ## Créditos
 Imagem do ícone: <a href="https://www.flaticon.com/free-icons/medicine" title="medicine icons">Medicine icons created by Freepik - Flaticon</a>
