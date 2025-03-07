@@ -1,0 +1,47 @@
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1rem 0 1rem;
+    height: 6.8rem;
+}
+
+.menu__image {
+    border-radius: 100%;
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.menu__content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.menu__content-title {
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.menu__content-description {
+    font-weight: 400;
+}
+
+@media screen and (min-width: 1440px) {
+    .menu__content-title {
+        font-size: 1.9rem;
+    }
+
+    .menu__content-description {
+        font-size: 1.2rem;
+    }
+
+    .menu__image {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .menu {
+        padding: 2rem 0 0 1.5rem;
+    }
+}

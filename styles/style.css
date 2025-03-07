@@ -1,0 +1,46 @@
+@import url("menu.css");
+@import url("appointments.css");
+@import url("footer.css");
+@import url("button.css");
+@import url("form.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --background: #F8F4FF;
+    --white: #FFFFFF;
+    --black: #333333;
+    --black-shadow: #0000000F;
+    --label-forms: #898989;
+    --principal-black: #464646;
+    --gray: #A3A3A3;
+    --blue: #4894FF;
+    --floating-shadow: #73ccf96d;
+    --blue-shadow: #4894FF29; 
+    --orange: #FFB050;
+    --orange-shadow: #FFB05029;
+    --light-gray: #ECECEC;
+    --font: "Montserrat", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background);
+    font-family: var(--font);
+    color: var(--principal-black);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+main {
+    padding: 0 0 3.5rem 0;
+}
+
+@media screen and (min-width: 1440px) {
+    main {
+        padding-left: 300px;
+    }
+}

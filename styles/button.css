@@ -1,0 +1,124 @@
+.button {
+    position: relative;
+}
+
+.floating-button-checkbox {
+    appearance: none;
+    position: relative;
+    z-index: 3;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.plus-button {
+    background-color: var(--blue);
+    box-shadow: 10px 5px 16px var(--floating-shadow);
+    padding: 1.5rem;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 6rem;
+    right: 1rem;
+    z-index: 3;
+}
+
+.button-list__item {
+    margin: 2rem 0 2rem 0;
+}
+
+.camera-button {
+    background-image: url("../assets/camera_button_icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    background-color: var(--blue);
+    box-shadow: 10px 5px 16px var(--floating-shadow);
+    border-radius: 100%;
+    padding: 1.3rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: fixed;
+    bottom: 11.5rem;
+    right: 1rem;
+    z-index: 2;
+}
+
+.pin-button {
+    background-image: url("../assets/pin_button_icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    background-color: var(--blue);
+    box-shadow: 10px 5px 16px var(--floating-shadow);
+    border-radius: 100%;
+    padding: 1.3rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: fixed;
+    bottom: 17rem;
+    right: 1rem; 
+    z-index: 2;
+}
+
+.button-list {
+    list-style: none;
+    display: none;
+    position: absolute;
+    bottom: 6rem;
+    right: 1rem;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); 
+    display: none;
+    z-index: 1; 
+}
+
+
+.floating-button-checkbox:checked~.button-list {
+    display: block;
+    z-index: 2; 
+}
+
+.floating-button-checkbox:checked~.overlay {
+    display: block;
+}
+
+.button-link {
+    text-decoration: none;
+    color: var(--principal-black);
+    padding: 0.7rem;
+    background-color: var(--white);
+    border-radius: 2rem;
+}
+
+.address-link {
+    position: fixed;
+    bottom: 18rem;
+    right: 6.5rem; 
+}
+
+.video-link {
+    position: fixed;
+    bottom: 12.5rem;
+    right: 6.5rem;
+}
+
+@media screen and (min-width: 1440px) {
+    .plus-button:hover {
+        cursor: pointer;
+        padding: 1.7rem;
+        transition: 0.3s;
+    }
+    .pin-button:hover, .camera-button:hover {
+        cursor: pointer;
+        padding: 1.5rem;
+        transition: 0.3s;
+    }
+}

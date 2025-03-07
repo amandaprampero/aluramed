@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraMed</title>
+    <link rel="icon" href="./assets/medicine.png">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <main class="form-main">
+        <div class="forms-container">
+            <form class="forms">
+                <h1 class="forms-title">Cadastrar nova consulta</h1>
+
+                <div class="name-field">
+                    <label for="name">Nome do paciente</label>
+                    <input type="text" name="patient-name" id="name">
+                </div>
+
+                <div class="radio">
+                    <label>Tipo de consulta</label>
+                    <div class="radio-buttons">
+                        <label class="radio-button">
+                            <input type="radio" name="type" value="remote">
+                            <img class="radio-icon" src="./assets/radio_off.svg" alt="Opção de vídeo chamada">
+                            Vídeo chamada
+                        </label>
+
+                        <label class="radio-button">
+                            <input type="radio" name="type" value="in-person">
+                            <img class="radio-icon" src="./assets/radio_off.svg" alt="Opção de consulta presencial">
+                            Presencial
+                        </label>
+                    </div>
+                </div>
+
+                <fieldset class="group">
+                    <div class="date-field">
+                        <label for="date">Data da consulta</label>
+                        <input type="date" id="date">
+                    </div>
+
+                    <div class="time-field">
+                        <label for="time">Horário da consulta</label>
+                        <input type="time" id="time">
+                    </div>
+                </fieldset>
+
+                <div class="obs">
+                    <label for="observations">Observações</label>
+                    <textarea row="6" name="observation" id="observations"></textarea>
+                </div>
+
+                <a class="submit-button" href="index.html">Salvar</a>
+
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <nav class="footer__container">
+            <ul class="footer__container__list">
+                <li class="footer__container__list__item">
+                    <img class="footer__calendar-image" src="./assets/calendar.png" alt="Opção de consultas">
+                    <a class="footer__list__item__link selected-item" href="#">Consultas</a>
+                </li>
+                <li class="footer__container__list__item">
+                    <img class="footer__clients-image" src="./assets/clients.svg" alt="Opção de clientes">
+                    <a class="footer__list__item__link" href="#">Clientes</a>
+                </li>
+                <li class="footer__container__list__item">
+                    <img class="footer__reporting-image" src="./assets/reporting.svg" alt="Opção de relatórios">
+                    <a class="footer__list__item__link" href="#">Relatórios</a>
+                </li>
+                <li class="footer__container__list__item">
+                    <img class="footer__menu-image" src="./assets/menu.svg" alt="Opção de menu">
+                    <a class="footer__list__item__link" href="#">Menu</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
